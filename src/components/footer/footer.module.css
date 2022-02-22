@@ -1,0 +1,10 @@
+.footerBG {
+    background: darkgrey;
+    height: 250px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,36 @@
+.mainBG {
+    height: 100vh;
+
+}
+
+.title {
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+}
+
+.mainTitle {
+    line-height: 80px;
+}
+
+.icoBox {
+    margin-top: 100px;
+    flex-direction: row-reverse;
+}
+
+.icoItem {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.ico {
+    margin: 10px 10px 10px 10px;
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+}
+
+.ico:hover {
+    width: 45px;
+    height: 45px;
+}

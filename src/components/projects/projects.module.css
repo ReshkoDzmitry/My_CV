@@ -1,0 +1,10 @@
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.projectsBG {
+    background: cornflowerblue;
+}
