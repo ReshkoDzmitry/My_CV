@@ -1,11 +1,13 @@
 .skills {
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    align-items: center;
+    /*justify-content: space-around;*/
+    /*height: 100vh;*/
+    /*align-items: center;*/
+    padding: 130px 0;
 }
 
 .skillsBG {
-    /*background-color: #222222;*/
-    background-color: #1d1d1d;
+    background-color: #222222;
+    /*background-color: rgba(34, 34, 34, 0.62);*/
+    background-color: rgba(34, 34, 34, 0.05);
 }
+

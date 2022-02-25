@@ -1,5 +1,110 @@
-.img {
-    width: 50px;
-    border-radius: 50%;
+.customBtn {
+    width: 130px;
+    height: 40px;
+    color: #222222;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),
+    7px 7px 20px 0 rgba(0,0,0,.1),
+    4px 4px 5px 0 rgba(0,0,0,.1);
+    outline: none;
+}
 
+.btn {
+    /*background: rgb(0,172,238);*/
+    /*background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);*/
+    width: 130px;
+    height: 40px;
+    line-height: 24px;
+    padding: 0;
+    border: none;
+    cursor: auto;
+}
+
+.btn:hover {
+    cursor: auto;
+}
+
+.btn div {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:before,
+.btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #b9b9b9;
+    transition: all 0.3s ease;
+}
+
+.btn:before {
+    height: 0;
+    width: 2px;
+}
+
+.btn:after {
+    width: 0;
+    height: 2px;
+}
+
+.btn div img {
+    opacity: .6;
+}
+
+.btn:hover img{
+    background: transparent;
+    box-shadow: none;
+    opacity: 9;
+}
+
+.btn:hover:before {
+    height: 100%;
+}
+
+.btn:hover:after {
+    width: 100%;
+}
+
+.btn div:hover{
+    color: #222222;
+}
+
+.btn div:before,
+.btn div:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #b9b9b9;
+    transition: all 0.3s ease;
+}
+
+.btn div:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn div:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn div:hover:before {
+    height: 100%;
+}
+
+.btn div:hover:after {
+    width: 100%;
 }

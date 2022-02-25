@@ -11,8 +11,8 @@ const Greetings = (props) => {
 
     return (
 
-        <div style={{marginTop:"100px"}} className={`${s.openSansFont} ${theme ? "" : greetingsStyle.nightBg}`}
-             id='aboutMe' >
+        <div className={`${s.openSansFont} ${theme ? "" : greetingsStyle.nightBg}`}
+             id='aboutMe'>
 
             <div className={`${greetingsStyle.greeting} ${s.container}`}>
 
@@ -49,8 +49,10 @@ const Greetings = (props) => {
                                 <p className={theme ? greetingsStyle.descriptionItem : `${greetingsStyle.descriptionItem} ${greetingsStyle.descriptionItemNight}`}>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi consequatur
                                     deserunt eius enim excepturi facere harum impedit in incidunt ipsam laudantium
-                                    molestias
-                                    nihil, omnis porro reprehenderit repudiandae velit veniam.
+                                    molestias nihil, omnis porro reprehenderit repudiandae velit veniam.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, aspernatur assumenda
+                                    et exercitationem impedit, incidunt itaque modi non officiis quas quisquam repellat
+                                    totam. Ipsa iure mollitia sapiente similique voluptatem.
                                 </p>
                             </div> :
                             <div className={greetingsStyle.descriptionWrapper}>
@@ -285,7 +287,6 @@ const Greetings = (props) => {
                                 </div>
                             </div>
                         }
-
 
 
                     </div>

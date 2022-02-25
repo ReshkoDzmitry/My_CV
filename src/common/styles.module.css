@@ -31,7 +31,8 @@ a {
 }
 
 .container {
-    width: 80%;
+
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -64,7 +65,7 @@ body {
     width: 100%;
     overflow: hidden;
     padding:0;
-    margin:0px;
+    margin:0;
 }
 .cube {
     position: absolute;
