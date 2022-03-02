@@ -1,110 +1,119 @@
-.customBtn {
-    width: 130px;
-    height: 40px;
+.customBox {
     color: #222222;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
     position: relative;
     display: inline-block;
-    box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),
-    7px 7px 20px 0 rgba(0,0,0,.1),
-    4px 4px 5px 0 rgba(0,0,0,.1);
-    outline: none;
+    /*box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),*/
+    /*7px 7px 20px 0 rgba(0,0,0,.1),*/
+    /*4px 4px 5px 0 rgba(0,0,0,.1);*/
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
 }
 
-.btn {
+.customBox:hover {
+    box-shadow: 0px 0px 10px 0px rgba(17, 17, 17, 0.6);
+}
+
+.box {
     /*background: rgb(0,172,238);*/
     /*background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);*/
     width: 130px;
-    height: 40px;
+    height: 130px;
+    margin: 10px;
     line-height: 24px;
     padding: 0;
     border: none;
+}
+
+.boxInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box:hover {
     cursor: auto;
 }
 
-.btn:hover {
-    cursor: auto;
-}
-
-.btn div {
-    position: relative;
-    display: block;
+.box .boxInner {
     width: 100%;
     height: 100%;
 }
 
-.btn:before,
-.btn:after {
+.box:before,
+.box:after {
     position: absolute;
     content: "";
     right: 0;
     top: 0;
     background: #b9b9b9;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-.btn:before {
+.box:before {
     height: 0;
     width: 2px;
 }
 
-.btn:after {
+.box:after {
     width: 0;
     height: 2px;
 }
 
-.btn div img {
+.box .boxInner img {
     opacity: .6;
 }
 
-.btn:hover img{
+.box:hover img{
     background: transparent;
     box-shadow: none;
     opacity: 9;
 }
 
-.btn:hover:before {
+.box:hover:before {
     height: 100%;
 }
 
-.btn:hover:after {
+.box:hover:after {
     width: 100%;
 }
 
-.btn div:hover{
+.box .boxInner:hover{
     color: #222222;
 }
 
-.btn div:before,
-.btn div:after {
+.box .boxInner:before,
+.box .boxInner:after {
     position: absolute;
     content: "";
-    left: 0;
-    bottom: 0;
+    left: 0%;
+    bottom: 0%;
     background: #b9b9b9;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-.btn div:before {
+.box .boxInner:before {
     width: 2px;
     height: 0%;
 }
 
-.btn div:after {
+.box .boxInner:after {
     width: 0%;
     height: 2px;
 }
 
-.btn div:hover:before {
+.box .boxInner:hover:before {
     height: 100%;
 }
 
-.btn div:hover:after {
+.box .boxInner:hover:after {
     width: 100%;
+}
+
+.skillListTitle {
+    color: #5e6472;
+}
+
+.skillListTitleNight {
+    color: white;
 }

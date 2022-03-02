@@ -14,9 +14,12 @@ import react from '../../images/imagesSkills/react.png';
 import sass from '../../images/imagesSkills/sass.png';
 import ts from '../../images/imagesSkills/ts.png';
 import redux from '../../images/imagesSkills/redux.png';
+import mUI from '../../images/imagesSkills/materialUi.png';
 
 
-const Skills = () => {
+const Skills = (props) => {
+
+    const {lang, theme} = props;
 
     const allSkills = [
         {
@@ -74,6 +77,11 @@ const Skills = () => {
             image: figma,
             title: 'Figma',
         },
+        {
+            id: 12,
+            image: mUI,
+            title: 'Material UI',
+        },
     ]
 
     const placesOfStudy = [
@@ -120,12 +128,20 @@ const Skills = () => {
     ]
 
     return (
-        <div className={skillsStyle.skillsBG} id={'skills'}>
+        <div className={theme ? skillsStyle.skillsBG : skillsStyle.skillsBGNight} id={'skills'}>
             <div className={`${skillsStyle.skills} ${s.container}`}>
-                <div style={{display:"flex", justifyContent:"space-between"}}>
-                    <h3>1</h3>
-                    <h3>2</h3>
-                </div>
+
+                {lang ?
+                    <div style={{display:"flex", justifyContent:"space-between", padding:"0 0 25px 0"}}>
+                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Places of study</h3>
+                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`} style={{marginRight:"10px"}}>My skills</h3>
+                    </div> :
+                    <div style={{display:"flex", justifyContent:"space-between", padding:"0 0 25px 0"}}>
+                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Места учёбы</h3>
+                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`} style={{marginRight:"10px"}}>Мои навыки</h3>
+                    </div>
+                }
+
 
                 <div style={{display:"flex",  justifyContent:"space-between"}}>
 
@@ -141,13 +157,15 @@ const Skills = () => {
                                         specialityEng={m.specialityEng}
                                         specialityRu={m.specialityRu}
                                         yearsOfStudy={m.yearsOfStudy}
+                                        lang={lang}
+                                        theme={theme}
                                     />
                                 )
                             })
                         }
                     </div>
 
-                    <div style={{display:"flex", flexWrap:"wrap", width:"500px"}}>
+                    <div style={{display:"flex", flexWrap:"wrap", width:"600px", padding:"25px 0 0 0"}}>
                         {
                             allSkills.map(m => {
                                 return (
@@ -157,6 +175,8 @@ const Skills = () => {
                                         image={m.image}
                                         title={m.title}
                                         description={m.description}
+                                        lang={lang}
+                                        theme={theme}
                                     />
                                 )
                             })

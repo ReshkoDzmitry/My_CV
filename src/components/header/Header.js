@@ -19,7 +19,7 @@ const Header = (props) => {
     }
 
     return (
-        <div className={s.header} id='header'>
+        <div className={s.header} id='header' style={{zIndex:"9"}}>
             <Navigation lang={lang} setState={setState} theme={theme} setTheme={setTheme}/>
         </div>
     );

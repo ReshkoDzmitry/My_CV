@@ -40,27 +40,33 @@ const Greetings = (props) => {
 
                     <div>
                         {lang ?
-                            <h2 className={`${s.bellotaFont}`}>Dzmitry Reshko</h2> :
-                            <h2 className={`${s.bellotaFont}`}>Дмитрий Решко</h2>
+                            <h2 className={`${s.bellotaFont}`} style={{paddingLeft:"30px"}}>Dzmitry Reshko</h2> :
+                            <h2 className={`${s.bellotaFont}`} style={{paddingLeft:"30px"}}>Дмитрий Решко</h2>
                         }
 
                         {lang ?
                             <div className={greetingsStyle.descriptionWrapper}>
                                 <p className={theme ? greetingsStyle.descriptionItem : `${greetingsStyle.descriptionItem} ${greetingsStyle.descriptionItemNight}`}>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi consequatur
-                                    deserunt eius enim excepturi facere harum impedit in incidunt ipsam laudantium
-                                    molestias nihil, omnis porro reprehenderit repudiandae velit veniam.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, aspernatur assumenda
-                                    et exercitationem impedit, incidunt itaque modi non officiis quas quisquam repellat
-                                    totam. Ipsa iure mollitia sapiente similique voluptatem.
+                                    Hello. My name is Dmitry. I am 31 years old. I am a Junior Front-end Developer (React). I have over 11 years of experience in various fields.
+                                    Perfectionist for life. Therefore, I approach each task as responsibly as possible and try to complete it as best as possible.
+                                    Leadership qualities are well developed. I love when everything and everyone works productively and harmoniously.
+                                    Optimist. I approach everything with humor and full responsibility.
+                                    At each place of work he has established himself as a responsible employee.
+                                    At my previous workplace, I refilled cartridges - I can refill, disassemble and assemble them with my eyes closed. Conducted accounting in specialized programs. I did not plan to do this all my life and went to study: independent courses, IT-Academia, IT-Incubator, I delved into everything with my usual scrupulousness.
+                                    My skills, perseverance and perseverance will help you solve the tasks necessary for the company. Yes, I agree, I have no experience, but at my age, in order to be in demand, you need to learn quickly.
+                                    I love spending time with family and friends. In my free time, I make wood jewelry.
                                 </p>
                             </div> :
                             <div className={greetingsStyle.descriptionWrapper}>
                                 <p className={theme ? greetingsStyle.descriptionItem : `${greetingsStyle.descriptionItem} ${greetingsStyle.descriptionItemNight}`}>
-                                    Разнообразный и богатый опыт повышение уровня гражданского сознания обеспечивает
-                                    актуальность направлений прогрессивного развития. Дорогие друзья, выбранный нами
-                                    инновационный путь играет важную роль в формировании экономической целесообразности
-                                    принимаемых решений.
+                                    Привет. Меня зовут Дмитрий. Мне 31 год. Я Junior Front-end Developer (React). Опыт моей работы в различных сферах более 11 лет.
+                                    Перфекционист по-жизни. Поэтому к каждому заданию подхожу максимально ответственно и стараюсь выполнить его как можно лучше.
+                                    Хорошо развиты лидерские качества. Люблю когда всё и все работают продуктивно и слаженно.
+                                    Оптимист. Ко всему подхожу с юмором и полной ответственностью.
+                                    На каждом месте работы зарекомендовал себя как ответственный работник.
+                                    На предыдущем рабочем месте я заправлял картриджи - могу их заправить, разобрать и собрать с закрытыми глазами. Вел учёт в специализированных программах. Не планировал заниматься этим всю жизнь и пошел учиться: самостоятельные курсы, IT-Academia, IT-Incubator, во все вникал со свойственной мне скрупулезностью.
+                                    Мои навыки, усидчивость и насточивость помогут вам решать необходимые для компании задачи. Да, согласен, у меня нет опыта, но в моем возрасте чтобы быть востребованным необходимо быстро учиться.
+                                    Люблю проводить время в компании семьи и друзей. В свободное время занимаюсь изготовлением украшений из дерева.
                                 </p>
                             </div>
                         }
