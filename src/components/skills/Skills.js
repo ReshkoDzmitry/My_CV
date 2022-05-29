@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from '../../common/styles.module.css';
 import skillsStyle from './skills.module.css';
 import CardSkill from '../cardSkill/CardSkill';
-import CardStudies from "../../cardStudy/CardStudies";
+import CardStudies from "../cardStudy/CardStudies";
 import bem from '../../images/imagesSkills/bem.svg';
 import css from '../../images/imagesSkills/css.png';
 import figma from '../../images/imagesSkills/figma.png';
@@ -131,56 +131,81 @@ const Skills = (props) => {
         <div className={theme ? skillsStyle.skillsBG : skillsStyle.skillsBGNight} id={'skills'}>
             <div className={`${skillsStyle.skills} ${s.container}`}>
 
-                {lang ?
-                    <div style={{display:"flex", justifyContent:"space-between", padding:"0 0 25px 0"}}>
-                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Places of study</h3>
-                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`} style={{marginRight:"10px"}}>My skills</h3>
-                    </div> :
-                    <div style={{display:"flex", justifyContent:"space-between", padding:"0 0 25px 0"}}>
-                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Места учёбы</h3>
-                        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`} style={{marginRight:"10px"}}>Мои навыки</h3>
+                {/*{lang ?*/}
+                {/*    <div style={{display:"flex", justifyContent:"space-between", padding:"0 0 25px 0"}}>*/}
+                {/*        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Places of study</h3>*/}
+                {/*        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`} style={{marginRight:"10px"}}>My skills</h3>*/}
+                {/*    </div> :*/}
+                {/*    <div style={{display:"flex", justifyContent:"space-between", padding:"0 0 25px 0"}}>*/}
+                {/*        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Места учёбы</h3>*/}
+                {/*        <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`} style={{marginRight:"10px"}}>Мои навыки</h3>*/}
+                {/*    </div>*/}
+                {/*}*/}
+
+                <div className={skillsStyle.wrapperSkills} style={{display:"flex",  justifyContent:"space-between"}}>
+
+                    <div className={skillsStyle.studyBlock} style={{width:"500px", marginRight: "50px"}}>
+
+                        <div className={skillsStyle.studySkillsBlockTitle} style={{textAlign: "center", padding: "0 0 30px 0"}}>
+                            {lang ?
+                                <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Places of study</h3>
+                                :
+                                <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Места учёбы</h3>
+                            }
+
+                        </div>
+
+                        <div>
+                            {
+                                placesOfStudy.map(m => {
+                                    return (
+                                        <CardStudies
+                                            key={m.id}
+                                            id={m.id}
+                                            nameEng={m.nameEng}
+                                            nameRu={m.nameRu}
+                                            specialityEng={m.specialityEng}
+                                            specialityRu={m.specialityRu}
+                                            yearsOfStudy={m.yearsOfStudy}
+                                            lang={lang}
+                                            theme={theme}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+
                     </div>
-                }
 
 
-                <div style={{display:"flex",  justifyContent:"space-between"}}>
+                    <div className={skillsStyle.skillsBlock} style={{display:"flex", flexWrap:"wrap", justifyContent: "center", width:"600px"}}>
 
-                    <div style={{width:"500px"}}>
-                        {
-                            placesOfStudy.map(m => {
-                                return (
-                                    <CardStudies
-                                        key={m.id}
-                                        id={m.id}
-                                        nameEng={m.nameEng}
-                                        nameRu={m.nameRu}
-                                        specialityEng={m.specialityEng}
-                                        specialityRu={m.specialityRu}
-                                        yearsOfStudy={m.yearsOfStudy}
-                                        lang={lang}
-                                        theme={theme}
-                                    />
-                                )
-                            })
-                        }
-                    </div>
+                        <div className={skillsStyle.studySkillsBlockTitle} style={{textAlign: "center", padding: "0 0 30px 0"}}>
+                            {lang ?
+                                <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>My skills</h3>
+                                :
+                                <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Мои навыки</h3>
+                            }
+                        </div>
 
-                    <div style={{display:"flex", flexWrap:"wrap", width:"600px", padding:"25px 0 0 0"}}>
-                        {
-                            allSkills.map(m => {
-                                return (
-                                    <CardSkill
-                                        key={m.id}
-                                        id={m.id}
-                                        image={m.image}
-                                        title={m.title}
-                                        description={m.description}
-                                        lang={lang}
-                                        theme={theme}
-                                    />
-                                )
-                            })
-                        }
+                        <div className={skillsStyle.skillsItems} style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
+                            {
+                                allSkills.map(m => {
+                                    return (
+                                        <CardSkill
+                                            key={m.id}
+                                            id={m.id}
+                                            image={m.image}
+                                            title={m.title}
+                                            description={m.description}
+                                            lang={lang}
+                                            theme={theme}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+
                     </div>
                 </div>
                 </div>

@@ -1,9 +1,10 @@
 .greeting {
     display: flex;
     justify-content: space-around;
-    height: 100vh;
+    /*height: 100vh;*/
     /*align-items: center;*/
     padding-top: 110px;
+    padding-bottom: 110px;
 }
 
 a {
@@ -85,7 +86,7 @@ a {
 .photo {
     border: 10px solid white;
     width: 330px;
-    height: 410px;
+    /*height: 410px;*/
     box-shadow: 0 0 20px 15px rgba(34, 60, 80, 0.24);
 }
 
@@ -109,6 +110,10 @@ a {
 .night {
     color: #c4c5c6;
     background-color: #222222;
+}
+
+.titleName {
+    padding-left: 25px;
 }
 
 .descriptionWrapper {
@@ -158,8 +163,72 @@ a {
 
 
 
+@media (max-width: 1350px) {
+    .listDescriptionWrapper {
+        margin-right: 120px;
+    }
+    .photo {
+        width: 300px;
+    }
+    .titleListInfo {
+        min-width: 85px;
+    }
+    .placesOfWorkWrapper {
+        margin-right: 195px;
+    }
+}
 
+@media (max-width: 1250px) {
+    .descriptionItem {
+        font-size: 14px;
+    }
+    .listDescriptionWrapper {
+        margin-right: 30px;
+    }
+    .photo {
+        width: 300px;
+    }
+    .titleListInfo {
+        min-width: 85px;
+    }
+    .placesOfWorkWrapper {
+        margin-right: 105px;
+    }
 
+}
+
+@media (max-width: 1145px) {
+    .photo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .mediaFlex {
+        flex-direction: column;
+    }
+    .photo {
+        width: 350px;
+    }
+    .photoBlockWrapper {
+        text-align: center;
+        padding: 0 0 60px 0;
+    }
+    .titleName {
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+    .listDescriptionWrapper {
+        margin-right: 40px;
+    }
+    .placesOfWorkWrapper {
+        margin-right: 110px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+}
 
 
 

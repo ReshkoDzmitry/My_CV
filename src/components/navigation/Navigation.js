@@ -13,7 +13,7 @@ const navItem = [
     { key: 2, id: 'aboutMe', title: 'About Me', titleRu: 'Обо мне'},
     { key: 3 , id: 'skills', title: 'Skills', titleRu: 'Навыки'},
     { key: 4, id: 'project', title: 'Project', titleRu: 'Проекты'},
-    { key: 5, id: 'contacts', title: 'Contacts', titleRu: 'Контакты'},
+    // { key: 5, id: 'contacts', title: 'Contacts', titleRu: 'Контакты'},
 ]
 
 const Navigation = (props) => {
@@ -44,10 +44,13 @@ const Navigation = (props) => {
             }
 
             {lang ?
-                <button className={styleNavigation.langBtn} onClick={changeLangHandler}><img
-                    src={langENG} alt="ENG"/></button>:
-                <button className={styleNavigation.langBtn} onClick={changeLangHandler}><img
-                    src={langRU} alt="RU"/></button>
+                // <button className={styleNavigation.langBtn} onClick={changeLangHandler}><img
+                //     src={langENG} alt="ENG"/></button>:
+                // <button className={styleNavigation.langBtn} onClick={changeLangHandler}><img
+                //     src={langRU} alt="RU"/></button>
+
+                <button className={styleNavigation.langBtn} onClick={changeLangHandler}>ENG</button>:
+                <button className={styleNavigation.langBtn} onClick={changeLangHandler}>RU</button>
             }
         </div>
     );

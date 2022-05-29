@@ -1,10 +1,82 @@
 .footerBG {
-    background: darkgrey;
-    height: 250px;
+    background: #f4f4f4;
+    height: 500px;
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.form {
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-bottom: solid 1px gray;
+    width: 300px;
+    height: 30px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 30px 20px;
+}
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.inputBox {
+    padding: 10px 0;
+}
+
+textarea {
+    width: 650px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin: 30px 0;
+    border-color: gray;
+}
+
+.sendMessage {
+    background-color: white;
+    border: 3px solid #c6a57a;
+    padding: 10px 30px;
+    transition: .3s;
+    color: #c6a57a;
+    font-weight: bolder;
+}
+
+.sendMessageNight {
+    border: 3px solid #c6a57a;
+    background-color: #222222;
+    padding: 10px 30px;
+    transition: .3s;
+    color: #c6a57a;
+    font-weight: bolder;
+}
+
+.sendMessage:hover {
+    background-color: #c6a57a;
+    color: white;
+    box-shadow: 0 0 10px 10px rgba(34, 60, 80, 0.1);
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px #83704a;
+}
+
+.sendMessageNight:hover {
+    background-color: #c6a57a;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px #83704a;
+}
+
+
+.footerTitle {
+    text-align: center;
+}
+
+.btnInner {
+    display: flex;
+    justify-content: center;
 }

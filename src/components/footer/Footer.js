@@ -20,31 +20,53 @@ const Footer = () => {
     ]
 
     return (
-        <div className={footerStyle.footerBG}>
-            <div className={`${footerStyle.footer} ${s.container}`}>
-                <div>
-                    {contacts.map(m => {
-                        return(
-                            <Contact
-                                key={m.id}
-                                image={m.image}
-                                title={m.title}
-                                description={m.description}
-                            />
-                        )
-                    })}
-                </div>
 
-                <div>
-                    {social.map(m => {
-                        return(
-                            <Social
-                                key={m.id}
-                                image={m.image}
-                                title={m.title}
-                            />
-                        )
-                    })}
+        <div className={footerStyle.footerBG}>
+            <div className={s.container}>
+                <h3 className={footerStyle.footerTitle}>Contacts</h3>
+                <form className={footerStyle.form}>
+
+                        <input type="text" placeholder='name'/>
+
+                        <input type="text" placeholder='e-mail'/>
+
+                    <div>
+                        <textarea name="message" id="mes" cols="30" rows="8"
+                                  placeholder='enter your message'>
+                        </textarea>
+                    </div>
+                    <div className={footerStyle.btnInner}>
+                        <a href="#"><div className={footerStyle.sendMessage}>Send message</div></a>
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <div className={`${footerStyle.footer} ${s.container}`}>
+                    <div>
+                        {contacts.map(m => {
+                            return (
+                                <Contact
+                                    key={m.id}
+                                    image={m.image}
+                                    title={m.title}
+                                    description={m.description}
+                                />
+                            )
+                        })}
+                    </div>
+
+                    <div>
+                        {social.map(m => {
+                            return (
+                                <Social
+                                    key={m.id}
+                                    image={m.image}
+                                    title={m.title}
+                                />
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ const Greetings = (props) => {
 
             <div className={`${greetingsStyle.greeting} ${s.container}`}>
 
-                <div className={s.flex}>
+                <div className={`${s.flex} ${greetingsStyle.mediaFlex}`}>
                     <div className={greetingsStyle.photoBlockWrapper}>
                         {/*<img className={theme ? greetingsStyle.photo : greetingsStyle.photoNight} src={theme ? photo : photoNight} alt="photo"/>*/}
                         <img className={theme ? greetingsStyle.photo : greetingsStyle.photoNight} src={photo}
@@ -40,8 +40,8 @@ const Greetings = (props) => {
 
                     <div>
                         {lang ?
-                            <h2 className={`${s.bellotaFont}`} style={{paddingLeft:"30px"}}>Dzmitry Reshko</h2> :
-                            <h2 className={`${s.bellotaFont}`} style={{paddingLeft:"30px"}}>Дмитрий Решко</h2>
+                            <h2 className={`${greetingsStyle.titleName} ${s.bellotaFont}`}>Dzmitry Reshko</h2> :
+                            <h2 className={`${greetingsStyle.titleName} ${s.bellotaFont}`}>Дмитрий Решко</h2>
                         }
 
                         {lang ?

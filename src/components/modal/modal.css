@@ -8,17 +8,94 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    z-index: 15;
 }
 
 .modal.active {
-    transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
 }
 
 .modalContent {
     padding: 20px;
-    border-radius: 12px;
+    /*border-radius: 12px;*/
     background-color: white;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    /*height: 550px;*/
+    transform: scale(.5);
+    transition: .4s all;
+}
+
+.modalContent.active {
+    transform: scale(1);
+    text-align: center;
+}
+
+.modalBgNight {
+    background-color: rgba(75, 75, 75, 1);
+}
+
+.btnOpenProject {
+    background-color: white;
+    border: 3px solid #c6a57a;
+    padding: 10px 30px;
+    transition: .3s;
+    color: #c6a57a;
+    font-weight: bolder;
+    width: 180px;
+    text-align: center;
+}
+
+.btnOpenProjectNight {
+    border: 3px solid #c6a57a;
+    padding: 10px 30px;
+    transition: .3s;
+    color: #c6a57a;
+    font-weight: bolder;
+    width: 180px;
+    text-align: center;
+}
+
+.btnOpenProject:hover {
+    background-color: #c6a57a;
+    color: white;
+    box-shadow: 0 0 10px 10px rgba(34, 60, 80, 0.1);
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px #83704a;
+}
+
+.btnOpenProjectNight:hover {
+    background-color: #c6a57a;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px #83704a;
+}
+
+.description {
+    color: rgb(94, 100, 114)
+}
+
+.descriptionNight {
+    color: white;
+}
+
+.modalImgProject {
+    width: 100%;
+    text-align: center;
+}
+
+.modalDescriptionTitle {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.modalDescription {
+    padding: 0 0 20px 0;
+    text-align: left;
+}
+
+.modalBtnInner {
+    display: flex;
+    justify-content: center;
 }

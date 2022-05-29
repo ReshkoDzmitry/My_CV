@@ -37,20 +37,21 @@ export const Main = (props) => {
                     <div className={s.cube}></div>
                     <div className={s.cube}></div>
                 </div>
-                <header>
+                <header style={{display:"flex", height:"100vh", alignItems:"center", justifyContent:"center"}}>
                     {/*<div className="logo"><span>RD</span></div>*/}
                     <section className={s.headerContent}>
                         {lang ?
                             <div>
-                                <h1 className={mainStyle.mainTitle}>Hi! <br/> My  name  is  Reshko  Dzmitry</h1>
+                                <h1 className={mainStyle.mainTitle}>Hi! <br/> My name is Reshko Dzmitry</h1>
                                 <p className={s.container}>
-                                    I am a junior front-end developer. And I am the one who will help you realize all your
+                                    I am a junior front-end developer. And I am the one who will help you realize all
+                                    your
                                     ideas.<br/>
                                     Check out my portfolio.
                                 </p>
                             </div> :
                             <div>
-                                <h1 className={mainStyle.mainTitle}>Привет!<br/> Меня  зовут  Дмитрий  Решко</h1>
+                                <h1 className={mainStyle.mainTitle}>Привет!<br/> Меня зовут Дмитрий Решко</h1>
                                 <p className={s.container}>
                                     Я junior front-end разработчик. И я тот, кто поможет реализовать все ваши идеи.<br/>
                                     Посмотрите мое портфолио.
@@ -59,16 +60,22 @@ export const Main = (props) => {
                         }
                         <div className={`${s.flex} ${s.container} ${mainStyle.icoBox}`}>
                             <div className={mainStyle.icoItem}>
-                                <a target='_blank' href="https://t.me/DzmitryReshko"><img className={mainStyle.ico} src={telegramIco} alt="telegram"/></a>
+                                <a target='_blank' href="https://t.me/DzmitryReshko"><img className={mainStyle.ico}
+                                                                                          src={telegramIco}
+                                                                                          alt="telegram"/></a>
                             </div>
                             <div className={mainStyle.icoItem}>
-                                <a target='_blank' href="viber://chat?number=%2B375333228375"><img className={mainStyle.ico} src={viberIco} alt="viber"/></a>
+                                <a target='_blank' href="viber://chat?number=%2B375333228375"><img
+                                    className={mainStyle.ico} src={viberIco} alt="viber"/></a>
                             </div>
                             <div className={mainStyle.icoItem}>
-                                <a target='_blank' href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D1%80%D0%B5%D1%88%D0%BA%D0%BE-3a0004231/"><img className={mainStyle.ico} src={linkedinIco} alt="linkedin"/></a>
+                                <a target='_blank'
+                                   href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D1%80%D0%B5%D1%88%D0%BA%D0%BE-3a0004231/"><img
+                                    className={mainStyle.ico} src={linkedinIco} alt="linkedin"/></a>
                             </div>
                             <div className={mainStyle.icoItem}>
-                                <a target='_blank' href="https://vk.com/dzmitry_reshko"><img className={mainStyle.ico} src={vkIco} alt="vk"/></a>
+                                <a target='_blank' href="https://vk.com/dzmitry_reshko"><img className={mainStyle.ico}
+                                                                                             src={vkIco} alt="vk"/></a>
                             </div>
                         </div>
                     </section>

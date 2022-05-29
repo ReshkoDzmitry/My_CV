@@ -31,8 +31,7 @@ a {
 }
 
 .container {
-
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -54,6 +53,7 @@ body {
     padding: 0;
     width: 100%;
     background: #FFF;
+
 }
 /* ============= Animation background ========= */
 .background {
@@ -134,7 +134,7 @@ header{
 }
 /* Header content & title & button*/
 .headerContent{
-    margin-top:20%;
+    /*margin-top:20%;*/
     text-align: center;
     color:  #EFEEF5;
 }
@@ -181,5 +181,14 @@ header{
     width: 100%;
     overflow: hidden;
     padding:0;
-    margin:0px;
+    margin:0;
 }
+
+
+
+
+
+
+
+
+
