@@ -10,7 +10,6 @@ const HeaderMenuBtn = (props) => {
         setMenuActive(true)
     }
 
-
     return (
         <div>
             <button onClick={menu}>MENU</button>
