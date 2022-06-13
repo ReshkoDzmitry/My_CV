@@ -99,3 +99,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 380px) {
+    .modalContent {
+        width: 290px;
+    }
+}

@@ -142,11 +142,11 @@ const Skills = (props) => {
                 {/*    </div>*/}
                 {/*}*/}
 
-                <div className={skillsStyle.wrapperSkills} style={{display:"flex",  justifyContent:"space-between"}}>
+                <div className={skillsStyle.wrapperSkills}>
 
-                    <div className={skillsStyle.studyBlock} style={{width:"500px", marginRight: "50px"}}>
+                    <div className={skillsStyle.studyBlock}>
 
-                        <div className={skillsStyle.studySkillsBlockTitle} style={{textAlign: "center", padding: "0 0 30px 0"}}>
+                        <div className={skillsStyle.studySkillsBlockTitle}>
                             {lang ?
                                 <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>Places of study</h3>
                                 :
@@ -178,9 +178,9 @@ const Skills = (props) => {
                     </div>
 
 
-                    <div className={skillsStyle.skillsBlock} style={{display:"flex", flexWrap:"wrap", justifyContent: "center", width:"600px"}}>
+                    <div className={skillsStyle.skillsBlock}>
 
-                        <div className={skillsStyle.studySkillsBlockTitle} style={{textAlign: "center", padding: "0 0 30px 0"}}>
+                        <div className={skillsStyle.studySkillsBlockTitle}>
                             {lang ?
                                 <h3 className={`${skillsStyle.skillsStudiesTitle} ${s.montserratFont}`}>My skills</h3>
                                 :
@@ -188,7 +188,7 @@ const Skills = (props) => {
                             }
                         </div>
 
-                        <div className={skillsStyle.skillsItems} style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
+                        <div className={skillsStyle.skillsItems}>
                             {
                                 allSkills.map(m => {
                                     return (

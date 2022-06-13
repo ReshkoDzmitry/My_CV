@@ -10,7 +10,7 @@ const Modal = (props) => {
             <div className={`${active ? "modalContent active" : "modalContent"} ${theme ? "modalBg" : "modalBgNight"}`} onClick={e => e.stopPropagation()}>
                 <img className={"modalImgProject"} src={image} alt="coffee1" />
                 <h5 className={`${s.montserratFont} ${"modalDescriptionTitle"} ${theme ? "description" : "descriptionNight"}`}>{title}</h5>
-                <p className={`${s.openSansFont} ${"modalDescription"} ${theme ? "description" : "descriptionNight"}`}>{descriptionModalENG}</p>
+                <p className={`${s.openSansFont} ${"modalDescription"} ${theme ? "description" : "descriptionNight"}`}>{lang ? descriptionModalENG : descriptionModalRU}</p>
 
                 <div className={"modalBtnInner"}>
                     <div>

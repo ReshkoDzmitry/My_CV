@@ -73,8 +73,7 @@ const Greetings = (props) => {
 
 
                         {lang ?
-                            <div className={s.flex}>
-
+                            <div className={`${s.flex} ${greetingsStyle.descriptionBlock}`}>
 
                                 <div className={greetingsStyle.listDescriptionWrapper}>
                                     <div className={s.flex}>
@@ -129,8 +128,7 @@ const Greetings = (props) => {
                                 </div>
                             </div> :
 
-                            <div className={s.flex}>
-
+                            <div className={`${s.flex} ${greetingsStyle.descriptionBlock}`}>
 
                                 <div className={greetingsStyle.listDescriptionWrapper}>
                                     <div className={s.flex}>

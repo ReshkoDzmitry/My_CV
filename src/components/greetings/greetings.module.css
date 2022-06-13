@@ -142,6 +142,7 @@ a {
 
 .placesOfWorkBox {
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .placesOfWorkWrapper {
@@ -161,6 +162,10 @@ a {
     color: #b2b2b2;
 }
 
+.descriptionBlock {
+    flex-wrap: wrap;
+}
+
 
 
 @media (max-width: 1350px) {
@@ -171,7 +176,7 @@ a {
         width: 300px;
     }
     .titleListInfo {
-        min-width: 85px;
+        min-width: 110px;
     }
     .placesOfWorkWrapper {
         margin-right: 195px;
@@ -189,7 +194,7 @@ a {
         width: 300px;
     }
     .titleListInfo {
-        min-width: 85px;
+        /*min-width: 85px;*/
     }
     .placesOfWorkWrapper {
         margin-right: 105px;
@@ -226,11 +231,23 @@ a {
     }
 }
 
-@media (max-width: 1080px) {
-
+@media (max-width: 715px) {
+    .textListInfo {
+        width: 180px;
+    }
 }
 
+@media (max-width: 560px) {
+    .textListInfo {
+        width: 180px;
+    }
+}
 
+@media (max-width: 380px) {
+    .photo {
+        width: 250px;
+    }
+}
 
 
 

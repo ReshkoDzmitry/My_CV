@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import {useEffect, useState} from "react";
 import {Main} from "./components/main/Main";
 import ScrollBtn from "./components/scrollBtn/ScrollBtn";
+import HeaderAdaptive from "./components/headerAdaptive/HeaderAdaptive";
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
             <div className="container">
                 {scroll > document.documentElement.clientHeight && <ScrollBtn/>}
                 <Main lang={lang} theme={theme}/>
-                <Header lang={lang} setState={setState} theme={theme} setTheme={setTheme}/>
+                {document.documentElement.clientWidth > 700 ? <Header/> : <HeaderAdaptive/>}
+                {/*<Header lang={lang} setState={setState} theme={theme} setTheme={setTheme}/>*/}
                 <Greetings lang={lang} theme={theme}/>
                 <Skills lang={lang} theme={theme}/>
                 <Projects lang={lang} theme={theme}/>

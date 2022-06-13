@@ -140,6 +140,7 @@
 
 .titleProjectCard {
     padding: 20px 0 10px 0;
+    text-align: center;
 }
 
 .descriptionProjectCard {
@@ -152,4 +153,15 @@
     padding: 10px 10px 0 0;
     font-size: 13px;
     color: #5e6472;
+}
+
+@media (max-width: 380px) {
+    .imgProject {
+        width: 250px;
+        height: 150px;
+    }
+    .box {
+        width: 250px;
+        height: 290px
+    }
 }

@@ -184,6 +184,12 @@ header{
     margin:0;
 }
 
+@media (max-width: 380px) {
+    h2 {
+        font-size: 35px;
+    }
+}
+
 
 
 

@@ -1,0 +1,8 @@
+.headerAdaptive {
+    background-color: rgb(55, 0, 145);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: .6s;
+}
