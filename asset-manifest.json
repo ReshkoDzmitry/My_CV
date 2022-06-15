@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/My_CV/static/css/main.a3030cc8.css",
-    "main.js": "/My_CV/static/js/main.4a987115.js",
+    "main.css": "/My_CV/static/css/main.640a55ad.css",
+    "main.js": "/My_CV/static/js/main.8ce21d1d.js",
     "static/js/787.1ed0c42c.chunk.js": "/My_CV/static/js/787.1ed0c42c.chunk.js",
-    "static/media/photo.jpg": "/My_CV/static/media/photo.0b3be46c1fb8417e9e10.jpg",
-    "static/media/photoNight.jpg": "/My_CV/static/media/photoNight.379157bac08bcf5fa52e.jpg",
+    "static/media/spaceJourney.jpg": "/My_CV/static/media/spaceJourney.0b92764c64c18a84f1c3.jpg",
+    "static/media/adaptiveSlider.jpg": "/My_CV/static/media/adaptiveSlider.473d72a606c20f2cd01d.jpg",
+    "static/media/shoesStore.jpg": "/My_CV/static/media/shoesStore.be706ca321de26fde7b1.jpg",
+    "static/media/coffeeHouse.jpg": "/My_CV/static/media/coffeeHouse.3492aab86465d1cb9699.jpg",
+    "static/media/nineFloors.jpg": "/My_CV/static/media/nineFloors.c71bc3d6c85c8e0fc459.jpg",
+    "static/media/wintersTale.jpg": "/My_CV/static/media/wintersTale.e83b658030bd608604eb.jpg",
+    "static/media/shoppingList.jpg": "/My_CV/static/media/shoppingList.e72becb0f2bd227e027a.jpg",
+    "static/media/photoNight.jpg": "/My_CV/static/media/photoNight.c45185a1f4358db1701a.jpg",
+    "static/media/photo.jpg": "/My_CV/static/media/photo.c10d7b0df1827560af0d.jpg",
+    "static/media/snakeGame.jpg": "/My_CV/static/media/snakeGame.e40a80b90c0a8906528a.jpg",
     "static/media/viber.png": "/My_CV/static/media/viber.3695e7780df363a21e58.png",
     "static/media/telegram.png": "/My_CV/static/media/telegram.fa0cf3a9f2ff177222a3.png",
     "static/media/vk.png": "/My_CV/static/media/vk.1d338ebda4fd8ad092ab.png",
     "static/media/linkedin.png": "/My_CV/static/media/linkedin.9a76432cc56dea2c7626.png",
     "index.html": "/My_CV/index.html",
     "static/media/bem.svg": "/My_CV/static/media/bem.46d8046ef683385ec2f072bdfc4d8cf6.svg",
-    "main.a3030cc8.css.map": "/My_CV/static/css/main.a3030cc8.css.map",
-    "main.4a987115.js.map": "/My_CV/static/js/main.4a987115.js.map",
+    "main.640a55ad.css.map": "/My_CV/static/css/main.640a55ad.css.map",
+    "main.8ce21d1d.js.map": "/My_CV/static/js/main.8ce21d1d.js.map",
     "787.1ed0c42c.chunk.js.map": "/My_CV/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3030cc8.css",
-    "static/js/main.4a987115.js"
+    "static/css/main.640a55ad.css",
+    "static/js/main.8ce21d1d.js"
   ]
 }
