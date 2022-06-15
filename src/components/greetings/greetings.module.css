@@ -94,7 +94,7 @@ a {
     /*border: 10px solid #c0c0c0;*/
     border: 10px solid white;
     width: 330px;
-    height: 410px;
+    /*height: 410px;*/
     box-shadow: 0 0 20px 15px rgba(203, 203, 203, 0.18);
     opacity: .7;
 }
@@ -247,7 +247,21 @@ a {
     .photo {
         width: 250px;
     }
+    .photoNight {
+        /*border: 10px solid #c0c0c0;*/
+        border: 10px solid white;
+        width: 250px;
+        box-shadow: 0 0 20px 15px rgba(203, 203, 203, 0.18);
+        opacity: .7;
+    }
+    .titleListInfo {
+        min-width: 85px;
+    }
+    .listDescriptionWrapper {
+        margin-right: 0;
+    }
 }
+
 
 
 

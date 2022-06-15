@@ -33,3 +33,9 @@
     width: 45px;
     height: 45px;
 }
+
+@media (max-width: 380px) {
+    .mainTitle {
+        line-height: 50px;
+    }
+}
