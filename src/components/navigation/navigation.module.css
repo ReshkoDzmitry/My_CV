@@ -1,3 +1,8 @@
+.wrapper {
+    display: flex;
+    height: 50px;
+}
+
 .list {
     list-style: none;
     display: flex;
@@ -6,11 +11,24 @@
     align-items: center;
 }
 
+.listAdaptive {
+    display: flex;
+    flex-direction: column;
+}
+
 .navigation {
     display: flex;
     justify-content: flex-end;
     height: inherit;
+    top: 100px;
+    transition: all .5s;
 }
+
+.navigationAdaptive  {
+    transition: all 1s;
+}
+
+
 
 .link {
     text-decoration: none;
@@ -18,7 +36,7 @@
     font-weight: bold;
     color: white;
     padding: 5px;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
@@ -41,6 +59,7 @@
     color: #c6a57a;
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
 }
 
 .themeBtn {
@@ -48,4 +67,77 @@
     cursor: pointer;
     border: none;
     background: none;
+    text-align: left;
 }
+
+.buttonWrapper {
+    display: none;
+    background: rgb(0 0 0 / 15%);
+}
+
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 30px;
+    margin: 10px;
+    border-top: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+}
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #FFFFFF;
+}
+
+
+
+@media (max-width: 700px) {
+    .buttonWrapper {
+        display: block;
+    }
+    .navigation {
+        transform: translateY(-150%);
+        flex-direction: column;
+    }
+    .navigationAdaptive {
+        display: flex;
+        flex-direction: column;
+        transition: all 1s;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 600px;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+    .listAdaptive {
+        display: flex;
+        flex-direction: column;
+    }
+    .langBtn {
+        margin: 0;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: #c6a57a;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .themeBtn {
+        margin: 0 10px 0 0;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+}
+

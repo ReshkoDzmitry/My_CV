@@ -70,7 +70,7 @@ export const Main = (props) => {
                             </div>
                             <div className={mainStyle.icoItem}>
                                 <a target='_blank'
-                                   href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D1%80%D0%B5%D1%88%D0%BA%D0%BE-3a0004231/"><img
+                                   href="https://www.linkedin.com/in/dzmitry-reshko-3a0004231/"><img
                                     className={mainStyle.ico} src={linkedinIco} alt="linkedin"/></a>
                             </div>
                             <div className={mainStyle.icoItem}>

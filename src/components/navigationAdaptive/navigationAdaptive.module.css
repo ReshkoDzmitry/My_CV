@@ -1,0 +1,51 @@
+.list {
+    list-style: none;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    height: inherit;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*.link:hover {*/
+/*    border-bottom: 2px solid orange;*/
+/*}*/
+
+.active {
+    /*border-bottom: 2px solid orange;*/
+    color: #c6a57a;
+    transition: .5s;
+}
+
+
+.langBtn {
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #c6a57a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.themeBtn {
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

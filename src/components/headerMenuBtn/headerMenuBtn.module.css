@@ -1,0 +1,17 @@
+.active {
+    color: red;
+    position: absolute;
+    top: 10px;
+
+}
+
+.col {
+    color: #591BC5;
+    position: absolute;
+    top: -150px;
+    background: black;
+}
+
+.btnWrapper {
+    text-align: end;
+}
