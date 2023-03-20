@@ -11,8 +11,7 @@ const Greetings = (props) => {
 
     return (
 
-        <div className={`${s.openSansFont} ${theme ? "" : greetingsStyle.nightBg}`}
-             id='aboutMe'>
+        <div className={`${s.openSansFont} ${theme ? "" : greetingsStyle.nightBg}`} id='aboutMe'>
 
             <div className={`${greetingsStyle.greeting} ${s.container}`}>
 
@@ -213,10 +212,8 @@ const Greetings = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 
-                                <div>
                                     <div className={`${greetingsStyle.personalData} ${greetingsStyle.textListWorks}`}>
                                         <p className={greetingsStyle.workPosition}>Technician</p>
                                         <div className={s.flex}>
@@ -226,13 +223,27 @@ const Greetings = (props) => {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
+
+                                <div>
                                     <div className={`${greetingsStyle.personalData} ${greetingsStyle.textListWorks}`}>
                                         <p className={greetingsStyle.workPosition}>System programmer</p>
                                         <div className={s.flex}>
                                             <div
                                                 className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>
                                                 "ByTech" 2021-2022
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div className={`${greetingsStyle.personalData} ${greetingsStyle.textListWorks}`}>
+                                        <p className={greetingsStyle.workPosition}>Software engineer</p>
+                                        <div className={s.flex}>
+                                            <div
+                                                className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>
+                                                "Department of capital construction of the <br/> Minsk Oblast Executive Committee" 2022-now
                                             </div>
                                         </div>
                                     </div>

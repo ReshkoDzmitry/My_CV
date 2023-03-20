@@ -28,7 +28,6 @@ export const Main = (props) => {
         // </div>
 
         <div className={`${mainStyle.mainBG} ${s.bellotaFont}`} id='home'>
-
             <div className={s.containerFluid}>
                 <div className={theme ? s.background : s.backgroundNight}>
                     <div className={s.cube}></div>
