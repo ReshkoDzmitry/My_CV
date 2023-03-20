@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My_CV/static/css/main.640a55ad.css",
-    "main.js": "/My_CV/static/js/main.8ce21d1d.js",
+    "main.css": "/My_CV/static/css/main.a8aac6d3.css",
+    "main.js": "/My_CV/static/js/main.28e25b59.js",
     "static/js/787.1ed0c42c.chunk.js": "/My_CV/static/js/787.1ed0c42c.chunk.js",
     "static/media/spaceJourney.jpg": "/My_CV/static/media/spaceJourney.0b92764c64c18a84f1c3.jpg",
     "static/media/adaptiveSlider.jpg": "/My_CV/static/media/adaptiveSlider.473d72a606c20f2cd01d.jpg",
@@ -19,12 +19,12 @@
     "static/media/linkedin.png": "/My_CV/static/media/linkedin.9a76432cc56dea2c7626.png",
     "index.html": "/My_CV/index.html",
     "static/media/bem.svg": "/My_CV/static/media/bem.46d8046ef683385ec2f072bdfc4d8cf6.svg",
-    "main.640a55ad.css.map": "/My_CV/static/css/main.640a55ad.css.map",
-    "main.8ce21d1d.js.map": "/My_CV/static/js/main.8ce21d1d.js.map",
+    "main.a8aac6d3.css.map": "/My_CV/static/css/main.a8aac6d3.css.map",
+    "main.28e25b59.js.map": "/My_CV/static/js/main.28e25b59.js.map",
     "787.1ed0c42c.chunk.js.map": "/My_CV/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.640a55ad.css",
-    "static/js/main.8ce21d1d.js"
+    "static/css/main.a8aac6d3.css",
+    "static/js/main.28e25b59.js"
   ]
 }
