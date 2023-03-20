@@ -10,6 +10,7 @@ import nineFloors from "../../images/projects/nineFloors.jpg";
 import slider from "../../images/projects/adaptiveSlider.jpg";
 import snakeGame from "../../images/projects/snakeGame.jpg";
 import wintersTale from "../../images/projects/wintersTale.jpg";
+import sportHub from "../../images/projects/sportHub.jpg";
 
 
 const Projects = (props) => {
@@ -126,6 +127,18 @@ const Projects = (props) => {
             descriptionModalRU: 'Классическая игра "Змейка"\n' +
                 'Используется HTML, CSS, JS, Canvas.',
             url: 'https://reshkodzmitry.github.io/SnakeGame/'
+        },
+        {
+            id: 9,
+            image: sportHub,
+            title: 'SportHub',
+            descriptionENG: 'application',
+            descriptionRU: 'веб-приложение',
+            descriptionModalENG: 'The classic game "Snake".\n' +
+                'Used HTML, CSS, JS, Canvas.',
+            descriptionModalRU: 'Главная страница спортивного новостного сайта"\n' +
+                'Используется React, SCSS.',
+            url: 'https://reshkodzmitry.github.io/sportHub/',
         },
     ]
 
