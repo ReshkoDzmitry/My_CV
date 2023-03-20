@@ -58,13 +58,13 @@ const Greetings = (props) => {
                             </div> :
                             <div className={greetingsStyle.descriptionWrapper}>
                                 <p className={theme ? greetingsStyle.descriptionItem : `${greetingsStyle.descriptionItem} ${greetingsStyle.descriptionItemNight}`}>
-                                    Привет. Меня зовут Дмитрий. Мне 31 год. Я Junior Front-end Developer (React). Опыт моей работы в различных сферах более 11 лет.
+                                    Привет. Меня зовут Дмитрий. Мне 32 года. Я Junior Front-end Developer (React). Опыт моей работы в различных сферах более 11 лет.
                                     Перфекционист по-жизни. Поэтому к каждому заданию подхожу максимально ответственно и стараюсь выполнить его как можно лучше.
                                     Хорошо развиты лидерские качества. Люблю когда всё и все работают продуктивно и слаженно.
                                     Оптимист. Ко всему подхожу с юмором и полной ответственностью.
                                     На каждом месте работы зарекомендовал себя как ответственный работник.
                                     В данный момент работаю инженером-программистом. Прошел курсы в IT-Academia и IT-Incubator.
-                                    Мои навыки, усидчивость и настойчивость помогут вам решать необходимые для компании задачи. Да, согласен, у меня нет опыта, но в моем возрасте чтобы быть востребованным необходимо быстро учиться.
+                                    Мои навыки, усидчивость и настойчивость помогут вам решать необходимые для компании задачи.
                                     Люблю проводить время в компании семьи и друзей. В свободное время занимаюсь изготовлением украшений из дерева.
                                 </p>
                             </div>
@@ -78,7 +78,7 @@ const Greetings = (props) => {
                                     <div className={s.flex}>
                                         <div className={greetingsStyle.titleListInfo}>Age:</div>
                                         <div
-                                            className={theme ? greetingsStyle.textListInfo : `${greetingsStyle.textListInfo} ${greetingsStyle.textListInfoNight}`}>31
+                                            className={theme ? greetingsStyle.textListInfo : `${greetingsStyle.textListInfo} ${greetingsStyle.textListInfoNight}`}>32
                                         </div>
                                     </div>
 
@@ -133,7 +133,7 @@ const Greetings = (props) => {
                                     <div className={s.flex}>
                                         <div className={greetingsStyle.titleListInfo}>Возраст:</div>
                                         <div
-                                            className={theme ? greetingsStyle.textListInfo : `${greetingsStyle.textListInfo} ${greetingsStyle.textListInfoNight}`}>31
+                                            className={theme ? greetingsStyle.textListInfo : `${greetingsStyle.textListInfo} ${greetingsStyle.textListInfoNight}`}>32
                                         </div>
                                     </div>
 
@@ -198,7 +198,7 @@ const Greetings = (props) => {
                                         <div className={s.flex}>
                                             <div
                                                 className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>"БКНТ"
-                                                2010-2013г.
+                                                2010-2013
                                             </div>
                                         </div>
                                     </div>
@@ -209,7 +209,7 @@ const Greetings = (props) => {
                                         <div className={s.flex}>
                                             <div
                                                 className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>
-                                                "Nordlys" 2013-2014г.
+                                                "Nordlys" 2013-2014
                                             </div>
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@ const Greetings = (props) => {
                                         <div className={s.flex}>
                                             <div
                                                 className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>
-                                                "ByTech" 2014-2021г.
+                                                "ByTech" 2014-2021
                                             </div>
                                         </div>
                                     </div>
@@ -232,7 +232,7 @@ const Greetings = (props) => {
                                         <div className={s.flex}>
                                             <div
                                                 className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>
-                                                "ByTech" 2021-now
+                                                "ByTech" 2021-2022
                                             </div>
                                         </div>
                                     </div>
@@ -263,10 +263,8 @@ const Greetings = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 
-                                <div>
                                     <div className={`${greetingsStyle.personalData} ${greetingsStyle.textListWorks}`}>
                                         <p className={greetingsStyle.workPosition}>Техник</p>
                                         <div className={s.flex}>
@@ -276,14 +274,27 @@ const Greetings = (props) => {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
 
+                                <div>
                                     <div className={`${greetingsStyle.personalData} ${greetingsStyle.textListWorks}`}>
                                         <p className={greetingsStyle.workPosition}>Системный программист</p>
                                         <div className={s.flex}>
                                             <div
                                                 className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>ООО
-                                                "БайТехСервис" 2021-now
+                                                "БайТехСервис" 2021-2022г.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div className={`${greetingsStyle.personalData} ${greetingsStyle.textListWorks}`}>
+                                        <p className={greetingsStyle.workPosition}>Инженер-программист</p>
+                                        <div className={s.flex}>
+                                            <div
+                                                className={theme ? greetingsStyle.placesOfWork : greetingsStyle.placesOfWorkNight}>КУП
+                                                "УКС Миноблисполкома" 2021-2022г.
                                             </div>
                                         </div>
                                     </div>

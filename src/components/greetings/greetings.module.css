@@ -179,11 +179,11 @@ a {
         min-width: 110px;
     }
     .placesOfWorkWrapper {
-        margin-right: 195px;
+        margin-right: 155px;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
     .descriptionItem {
         font-size: 14px;
     }
@@ -197,16 +197,28 @@ a {
         /*min-width: 85px;*/
     }
     .placesOfWorkWrapper {
-        margin-right: 105px;
+        margin-right: 65px;
     }
 
 }
 
-@media (max-width: 1145px) {
+@media (max-width: 1185px) {
     .photo {
         width: 250px;
     }
 }
+
+@media (max-width: 1125px) {
+    .placesOfWorkWrapper {
+        margin-right: 30px;
+    }
+}
+
+/*@media (max-width: 1115px) {*/
+/*    .placesOfWorkWrapper {*/
+/*        margin-right: 55px;*/
+/*    }*/
+/*}*/
 
 @media (max-width: 1080px) {
     .mediaFlex {
