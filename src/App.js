@@ -9,6 +9,7 @@ import ScrollBtn from "./components/scrollBtn/ScrollBtn";
 import HeaderAdaptive from "./components/headerAdaptive/HeaderAdaptive";
 
 
+
 function App() {
     const [lang, setState] = useState(true)
     const [theme, setTheme] = useState(true)

@@ -47,13 +47,12 @@ const Greetings = (props) => {
                         {lang ?
                             <div className={greetingsStyle.descriptionWrapper}>
                                 <p className={theme ? greetingsStyle.descriptionItem : `${greetingsStyle.descriptionItem} ${greetingsStyle.descriptionItemNight}`}>
-                                    Hello. My name is Dmitry. I am 31 years old. I am a Junior Front-end Developer (React). I have over 11 years of experience in various fields.
+                                    Hello. My name is Dmitry. I am 32 years old. I am a Junior Front-end Developer (React). I have over 11 years of experience in various fields.
                                     Perfectionist for life. Therefore, I approach each task as responsibly as possible and try to complete it as best as possible.
                                     Leadership qualities are well developed. I love when everything and everyone works productively and harmoniously.
                                     Optimist. I approach everything with humor and full responsibility.
                                     At each place of work he has established himself as a responsible employee.
-                                    At my previous workplace, I refilled cartridges - I can refill, disassemble and assemble them with my eyes closed. Conducted accounting in specialized programs. I did not plan to do this all my life and went to study: independent courses, IT-Academia, IT-Incubator, I delved into everything with my usual scrupulousness.
-                                    My skills, perseverance and perseverance will help you solve the tasks necessary for the company. Yes, I agree, I have no experience, but at my age, in order to be in demand, you need to learn quickly.
+                                    I am currently working as a software engineer. Completed courses at IT-Academia and IT-Incubator.
                                     I love spending time with family and friends. In my free time, I make wood jewelry.
                                 </p>
                             </div> :
@@ -64,8 +63,8 @@ const Greetings = (props) => {
                                     Хорошо развиты лидерские качества. Люблю когда всё и все работают продуктивно и слаженно.
                                     Оптимист. Ко всему подхожу с юмором и полной ответственностью.
                                     На каждом месте работы зарекомендовал себя как ответственный работник.
-                                    На предыдущем рабочем месте я заправлял картриджи - могу их заправить, разобрать и собрать с закрытыми глазами. Вел учёт в специализированных программах. Не планировал заниматься этим всю жизнь и пошел учиться: самостоятельные курсы, IT-Academia, IT-Incubator, во все вникал со свойственной мне скрупулезностью.
-                                    Мои навыки, усидчивость и насточивость помогут вам решать необходимые для компании задачи. Да, согласен, у меня нет опыта, но в моем возрасте чтобы быть востребованным необходимо быстро учиться.
+                                    В данный момент работаю инженером-программистом. Прошел курсы в IT-Academia и IT-Incubator.
+                                    Мои навыки, усидчивость и настойчивость помогут вам решать необходимые для компании задачи. Да, согласен, у меня нет опыта, но в моем возрасте чтобы быть востребованным необходимо быстро учиться.
                                     Люблю проводить время в компании семьи и друзей. В свободное время занимаюсь изготовлением украшений из дерева.
                                 </p>
                             </div>
