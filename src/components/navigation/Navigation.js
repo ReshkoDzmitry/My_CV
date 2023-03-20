@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from '../../common/styles.module.css';
 import styleNavigation from './navigation.module.css';
 import {Link} from 'react-scroll';
-import langRU from '../../images/imagesLanguage/langRU.png';
-import langENG from '../../images/imagesLanguage/langENG.png';
 import sunImg from '../../images/imagesTheme/sun.png';
 import moonImg from '../../images/imagesTheme/moon.png';
 
